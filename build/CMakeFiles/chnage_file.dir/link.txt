@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/chnage_file.dir/src/change_FileName.cpp.o -o chnage_file  -lOpenCV -lheif 
