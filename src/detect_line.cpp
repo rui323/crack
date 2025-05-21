@@ -40,6 +40,8 @@ int main(int argc, char* argv[]){
 
         cv::Mat dst_adaptive;
         if(method == "M")cv::adaptiveThreshold(image, dst_adaptive, 255, cv::ADAPTIVE_THRESH_MEAN_C, cv::THRESH_BINARY_INV, std::stoi(argv[1]), std::stod(argv[2]));
+        else if(method == "O")cv::threshold(image, dst_adaptive, 0, 255, cv::THRESH_BINARY_INV | cv::THRESH_OTSU);
+        else if(method == "T")cv::threshold(image, dst_adaptive, 0, 255, cv::THRESH_BINARY_INV | cv::THRESH_TRIANGLE);
         else cv::adaptiveThreshold(image, dst_adaptive, 255, cv::ADAPTIVE_THRESH_GAUSSIAN_C, cv::THRESH_BINARY_INV, std::stoi(argv[1]), std::stod(argv[2]));
         images_adt.push_back(dst_adaptive);
         std::cout << "Save image: " << dst_adaptive.size() << " " <<images_adt.size()<< std::endl;
@@ -69,6 +71,8 @@ int main(int argc, char* argv[]){
     std::vector<cv::Mat> images_result;
     std::string path;
     if(method=="M") path = "../results/result_M.txt";
+    else if(method=="O") path = "../results/result_O.txt";
+    else if(method=="T") path = "../results/result_T.txt";
     else path = "../results/result_G.txt";
     std::ofstream file(path);
     if (!file.is_open()) {
@@ -156,6 +160,8 @@ int main(int argc, char* argv[]){
         
         std::string filename;
         if(method=="M") filename = "../results/result_M_" + std::to_string(i) + ".jpg";
+        else if(method=="O") filename = "../results/result_O_" + std::to_string(i) + ".jpg";
+        else if(method=="T") filename = "../results/result_T_" + std::to_string(i) + ".jpg";
         else filename = "../results/result_G_" + std::to_string(i) + ".jpg";
         
         cv::imwrite(filename, combined3);
