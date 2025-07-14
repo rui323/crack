@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/include/libheif -I/home/ros2_louis/crack/include -isystem /usr/include/opencv4
+CXX_INCLUDES = -I/home/ros2_louis/crack/onnxruntime-linux-x64-1.21.0/include -I/usr/include/libheif -I/home/ros2_louis/crack/include -isystem /usr/include/opencv4
 
 CXX_FLAGS = -Wall -Wextra -Wpedantic
 

@@ -142,6 +142,19 @@ detect_line/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/detect_line.dir/build.make CMakeFiles/detect_line.dir/build
 .PHONY : detect_line/fast
 
+#=============================================================================
+# Target rules for targets named cracks_detection
+
+# Build rule for target.
+cracks_detection: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cracks_detection
+.PHONY : cracks_detection
+
+# fast build rule for target.
+cracks_detection/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cracks_detection.dir/build.make CMakeFiles/cracks_detection.dir/build
+.PHONY : cracks_detection/fast
+
 src/change_FileName.o: src/change_FileName.cpp.o
 .PHONY : src/change_FileName.o
 
@@ -190,6 +203,174 @@ src/detect_line.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/detect_line.dir/build.make CMakeFiles/detect_line.dir/src/detect_line.cpp.s
 .PHONY : src/detect_line.cpp.s
 
+src/detection.o: src/detection.cpp.o
+.PHONY : src/detection.o
+
+# target to build an object file
+src/detection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cracks_detection.dir/build.make CMakeFiles/cracks_detection.dir/src/detection.cpp.o
+.PHONY : src/detection.cpp.o
+
+src/detection.i: src/detection.cpp.i
+.PHONY : src/detection.i
+
+# target to preprocess a source file
+src/detection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cracks_detection.dir/build.make CMakeFiles/cracks_detection.dir/src/detection.cpp.i
+.PHONY : src/detection.cpp.i
+
+src/detection.s: src/detection.cpp.s
+.PHONY : src/detection.s
+
+# target to generate assembly for a file
+src/detection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cracks_detection.dir/build.make CMakeFiles/cracks_detection.dir/src/detection.cpp.s
+.PHONY : src/detection.cpp.s
+
+src/detection_main.o: src/detection_main.cpp.o
+.PHONY : src/detection_main.o
+
+# target to build an object file
+src/detection_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cracks_detection.dir/build.make CMakeFiles/cracks_detection.dir/src/detection_main.cpp.o
+.PHONY : src/detection_main.cpp.o
+
+src/detection_main.i: src/detection_main.cpp.i
+.PHONY : src/detection_main.i
+
+# target to preprocess a source file
+src/detection_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cracks_detection.dir/build.make CMakeFiles/cracks_detection.dir/src/detection_main.cpp.i
+.PHONY : src/detection_main.cpp.i
+
+src/detection_main.s: src/detection_main.cpp.s
+.PHONY : src/detection_main.s
+
+# target to generate assembly for a file
+src/detection_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cracks_detection.dir/build.make CMakeFiles/cracks_detection.dir/src/detection_main.cpp.s
+.PHONY : src/detection_main.cpp.s
+
+src/nn/autobackend.o: src/nn/autobackend.cpp.o
+.PHONY : src/nn/autobackend.o
+
+# target to build an object file
+src/nn/autobackend.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cracks_detection.dir/build.make CMakeFiles/cracks_detection.dir/src/nn/autobackend.cpp.o
+.PHONY : src/nn/autobackend.cpp.o
+
+src/nn/autobackend.i: src/nn/autobackend.cpp.i
+.PHONY : src/nn/autobackend.i
+
+# target to preprocess a source file
+src/nn/autobackend.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cracks_detection.dir/build.make CMakeFiles/cracks_detection.dir/src/nn/autobackend.cpp.i
+.PHONY : src/nn/autobackend.cpp.i
+
+src/nn/autobackend.s: src/nn/autobackend.cpp.s
+.PHONY : src/nn/autobackend.s
+
+# target to generate assembly for a file
+src/nn/autobackend.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cracks_detection.dir/build.make CMakeFiles/cracks_detection.dir/src/nn/autobackend.cpp.s
+.PHONY : src/nn/autobackend.cpp.s
+
+src/nn/onnx_model_base.o: src/nn/onnx_model_base.cpp.o
+.PHONY : src/nn/onnx_model_base.o
+
+# target to build an object file
+src/nn/onnx_model_base.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cracks_detection.dir/build.make CMakeFiles/cracks_detection.dir/src/nn/onnx_model_base.cpp.o
+.PHONY : src/nn/onnx_model_base.cpp.o
+
+src/nn/onnx_model_base.i: src/nn/onnx_model_base.cpp.i
+.PHONY : src/nn/onnx_model_base.i
+
+# target to preprocess a source file
+src/nn/onnx_model_base.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cracks_detection.dir/build.make CMakeFiles/cracks_detection.dir/src/nn/onnx_model_base.cpp.i
+.PHONY : src/nn/onnx_model_base.cpp.i
+
+src/nn/onnx_model_base.s: src/nn/onnx_model_base.cpp.s
+.PHONY : src/nn/onnx_model_base.s
+
+# target to generate assembly for a file
+src/nn/onnx_model_base.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cracks_detection.dir/build.make CMakeFiles/cracks_detection.dir/src/nn/onnx_model_base.cpp.s
+.PHONY : src/nn/onnx_model_base.cpp.s
+
+src/utils/augment.o: src/utils/augment.cpp.o
+.PHONY : src/utils/augment.o
+
+# target to build an object file
+src/utils/augment.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cracks_detection.dir/build.make CMakeFiles/cracks_detection.dir/src/utils/augment.cpp.o
+.PHONY : src/utils/augment.cpp.o
+
+src/utils/augment.i: src/utils/augment.cpp.i
+.PHONY : src/utils/augment.i
+
+# target to preprocess a source file
+src/utils/augment.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cracks_detection.dir/build.make CMakeFiles/cracks_detection.dir/src/utils/augment.cpp.i
+.PHONY : src/utils/augment.cpp.i
+
+src/utils/augment.s: src/utils/augment.cpp.s
+.PHONY : src/utils/augment.s
+
+# target to generate assembly for a file
+src/utils/augment.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cracks_detection.dir/build.make CMakeFiles/cracks_detection.dir/src/utils/augment.cpp.s
+.PHONY : src/utils/augment.cpp.s
+
+src/utils/common.o: src/utils/common.cpp.o
+.PHONY : src/utils/common.o
+
+# target to build an object file
+src/utils/common.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cracks_detection.dir/build.make CMakeFiles/cracks_detection.dir/src/utils/common.cpp.o
+.PHONY : src/utils/common.cpp.o
+
+src/utils/common.i: src/utils/common.cpp.i
+.PHONY : src/utils/common.i
+
+# target to preprocess a source file
+src/utils/common.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cracks_detection.dir/build.make CMakeFiles/cracks_detection.dir/src/utils/common.cpp.i
+.PHONY : src/utils/common.cpp.i
+
+src/utils/common.s: src/utils/common.cpp.s
+.PHONY : src/utils/common.s
+
+# target to generate assembly for a file
+src/utils/common.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cracks_detection.dir/build.make CMakeFiles/cracks_detection.dir/src/utils/common.cpp.s
+.PHONY : src/utils/common.cpp.s
+
+src/utils/ops.o: src/utils/ops.cpp.o
+.PHONY : src/utils/ops.o
+
+# target to build an object file
+src/utils/ops.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cracks_detection.dir/build.make CMakeFiles/cracks_detection.dir/src/utils/ops.cpp.o
+.PHONY : src/utils/ops.cpp.o
+
+src/utils/ops.i: src/utils/ops.cpp.i
+.PHONY : src/utils/ops.i
+
+# target to preprocess a source file
+src/utils/ops.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cracks_detection.dir/build.make CMakeFiles/cracks_detection.dir/src/utils/ops.cpp.i
+.PHONY : src/utils/ops.cpp.i
+
+src/utils/ops.s: src/utils/ops.cpp.s
+.PHONY : src/utils/ops.s
+
+# target to generate assembly for a file
+src/utils/ops.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cracks_detection.dir/build.make CMakeFiles/cracks_detection.dir/src/utils/ops.cpp.s
+.PHONY : src/utils/ops.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -199,6 +380,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... change_file"
+	@echo "... cracks_detection"
 	@echo "... detect_line"
 	@echo "... src/change_FileName.o"
 	@echo "... src/change_FileName.i"
@@ -206,6 +388,27 @@ help:
 	@echo "... src/detect_line.o"
 	@echo "... src/detect_line.i"
 	@echo "... src/detect_line.s"
+	@echo "... src/detection.o"
+	@echo "... src/detection.i"
+	@echo "... src/detection.s"
+	@echo "... src/detection_main.o"
+	@echo "... src/detection_main.i"
+	@echo "... src/detection_main.s"
+	@echo "... src/nn/autobackend.o"
+	@echo "... src/nn/autobackend.i"
+	@echo "... src/nn/autobackend.s"
+	@echo "... src/nn/onnx_model_base.o"
+	@echo "... src/nn/onnx_model_base.i"
+	@echo "... src/nn/onnx_model_base.s"
+	@echo "... src/utils/augment.o"
+	@echo "... src/utils/augment.i"
+	@echo "... src/utils/augment.s"
+	@echo "... src/utils/common.o"
+	@echo "... src/utils/common.i"
+	@echo "... src/utils/common.s"
+	@echo "... src/utils/ops.o"
+	@echo "... src/utils/ops.i"
+	@echo "... src/utils/ops.s"
 .PHONY : help
 
 
