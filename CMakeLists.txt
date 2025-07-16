@@ -44,6 +44,9 @@ target_link_libraries(change_file ${dependencies})
 add_executable(detect_line src/detect_line.cpp)
 target_link_libraries(detect_line ${dependencies})
 
+add_executable(find src/find_contours.cpp)
+target_link_libraries(find ${dependencies})
+
 # クラック自動検出 main関数から実行
 add_executable(cracks_detection 
     src/detection_main.cpp 

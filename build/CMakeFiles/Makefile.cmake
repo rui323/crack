@@ -51,5 +51,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/change_file.dir/DependInfo.cmake"
   "CMakeFiles/detect_line.dir/DependInfo.cmake"
+  "CMakeFiles/find.dir/DependInfo.cmake"
   "CMakeFiles/cracks_detection.dir/DependInfo.cmake"
   )

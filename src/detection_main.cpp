@@ -36,14 +36,16 @@ int main(int argc, char* argv[]) {
     std::cout << "Processing image: " << image_file << " (size: " << img.size() << ")" << std::endl;
     // 結果の描画
     cv::cvtColor(img, img, cv::COLOR_RGB2BGR);
-    auto [trimmed, boxed] = Detection::plot_results(img, objs, colors, names, img.size());
+    auto [trimmed, boxed] = Detection::plot_results(img, objs, colors, names);
     if(trimmed.channels() == 1) std::cout << "Not found" << std::endl;
     else {
         std::cout << "trimmed: " << trimmed.size() << std::endl;
         cv::imshow("results",trimmed);
+        cv::imshow("box",boxed);
         cv::waitKey(0);
         cv::destroyAllWindows();
     }
+    cv::imwrite("test.jpg",trimmed);
 
     
 

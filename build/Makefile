@@ -143,6 +143,19 @@ detect_line/fast:
 .PHONY : detect_line/fast
 
 #=============================================================================
+# Target rules for targets named find
+
+# Build rule for target.
+find: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 find
+.PHONY : find
+
+# fast build rule for target.
+find/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/find.dir/build.make CMakeFiles/find.dir/build
+.PHONY : find/fast
+
+#=============================================================================
 # Target rules for targets named cracks_detection
 
 # Build rule for target.
@@ -250,6 +263,30 @@ src/detection_main.s: src/detection_main.cpp.s
 src/detection_main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cracks_detection.dir/build.make CMakeFiles/cracks_detection.dir/src/detection_main.cpp.s
 .PHONY : src/detection_main.cpp.s
+
+src/find_contours.o: src/find_contours.cpp.o
+.PHONY : src/find_contours.o
+
+# target to build an object file
+src/find_contours.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/find.dir/build.make CMakeFiles/find.dir/src/find_contours.cpp.o
+.PHONY : src/find_contours.cpp.o
+
+src/find_contours.i: src/find_contours.cpp.i
+.PHONY : src/find_contours.i
+
+# target to preprocess a source file
+src/find_contours.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/find.dir/build.make CMakeFiles/find.dir/src/find_contours.cpp.i
+.PHONY : src/find_contours.cpp.i
+
+src/find_contours.s: src/find_contours.cpp.s
+.PHONY : src/find_contours.s
+
+# target to generate assembly for a file
+src/find_contours.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/find.dir/build.make CMakeFiles/find.dir/src/find_contours.cpp.s
+.PHONY : src/find_contours.cpp.s
 
 src/nn/autobackend.o: src/nn/autobackend.cpp.o
 .PHONY : src/nn/autobackend.o
@@ -382,6 +419,7 @@ help:
 	@echo "... change_file"
 	@echo "... cracks_detection"
 	@echo "... detect_line"
+	@echo "... find"
 	@echo "... src/change_FileName.o"
 	@echo "... src/change_FileName.i"
 	@echo "... src/change_FileName.s"
@@ -394,6 +432,9 @@ help:
 	@echo "... src/detection_main.o"
 	@echo "... src/detection_main.i"
 	@echo "... src/detection_main.s"
+	@echo "... src/find_contours.o"
+	@echo "... src/find_contours.i"
+	@echo "... src/find_contours.s"
 	@echo "... src/nn/autobackend.o"
 	@echo "... src/nn/autobackend.i"
 	@echo "... src/nn/autobackend.s"
